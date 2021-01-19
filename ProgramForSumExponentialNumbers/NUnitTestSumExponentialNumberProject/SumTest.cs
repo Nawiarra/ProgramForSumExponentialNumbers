@@ -13,7 +13,7 @@ namespace NUnitTestSumExponentialNumberProject
         [SetUp]
         public void Setup()
         {
-            sum = ExponentialNumber.ExponentialNumberCreate("0.0");
+            sum = ExponentialNumber.ExponentialNumberCreate("0.0e0");
         }
 
         [TestCase(new string[] { "12.7e+12", "10.3e+10" },  "1.2803e+13")]
@@ -26,7 +26,6 @@ namespace NUnitTestSumExponentialNumberProject
         [TestCase(new string[] { "4.2134e+23", "6.97826e-62" }, "4.2134e+23")]
         public void SumTwoArgs_ExponentialNumbers_ReturnsSameNumber(string[] nums, string waitingResult)
         {
-            sum = sum = ExponentialNumber.ExponentialNumberCreate("0.0");
 
             foreach (string str in nums)
             {
@@ -50,8 +49,7 @@ namespace NUnitTestSumExponentialNumberProject
         [TestCase(new string[] { "1.5e-3", "2.5e-3", "7.0e-3" }, "1.1e-2")]
         public void SumThreeArgs_ExponentialNumbers_ReturnsSameNumber(string[] nums, string waitingResult)
         {
-            sum = sum = ExponentialNumber.ExponentialNumberCreate("0.0");
-
+       
             foreach (string str in nums)
             {
                 arg1 = ExponentialNumber.ExponentialNumberCreate(str);

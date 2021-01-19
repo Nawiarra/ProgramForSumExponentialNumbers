@@ -21,7 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DBBestPractice1\ProgramForSumExponentialNumbers.csproj" />
+    <ProjectReference Include="..\ProgramForSumExponentialNumbers\ProgramForSumExponentialNumbers.csproj" />
+    <ProjectReference Include="..\ValidationCore\ValidationCore.csproj" />
   </ItemGroup>
 
 </Project>
