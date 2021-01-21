@@ -21,10 +21,6 @@ namespace ProgramForSumExponentialNumbers
         {
             Mantissa = new LinkedList<byte>();
 
-            Mantissa.AddFirst(0);
-            Mantissa.AddFirst(46);
-            Mantissa.AddFirst(0);
-
             Order = 0;
         }
         public static ExponentialNumber ExponentialNumberCreate(string value)
